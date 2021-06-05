@@ -58,18 +58,22 @@ h1, h2 {
 
 h3 {
     font-size: 2rem;
+    line-height: 1.6rem;
 }
 
 h4 {
     font-size: 1.5rem;
+    line-height: 1.3rem;
 }
 
 h5 {
     font-size: 1.3rem;
+    line-height: 1rem;
 }
 
 h6 {
     font-size: 1.2rem;
+    line-height: 1rem;
 }
 
 p {
@@ -188,6 +192,7 @@ textarea {
 img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 form {
@@ -242,32 +247,41 @@ ul {
     margin: 0;
 }
 
+li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 span {
     font-family: Nexa-Bold;
 }
 
 
 @media only screen and (min-width: 768px) {
+
     section {
-        padding: 3rem;
+        padding: 3rem 2rem;
     }
-
-
     h1, h2 {
         font-size: 3rem;
         line-height: 3rem;
     }
     h3 {
         font-size: 2.2rem;
+        line-height: 2.5rem;
     }
     h4 {
         font-size: 1.7rem;
+        line-height: 2rem;
     }
     h5 {
         font-size: 1.5rem;
+        line-height: 1.8rem;
     }
     h6 {
         font-size: 1.4rem;
+        line-height: 1.8rem;
     }
     p {
         font-size: 1.3rem;
@@ -275,6 +289,7 @@ span {
     }
     label {
         font-size: 1.3rem;
+        line-height: 1rem;
     }
     input {
         font-size: 1.1rem;
@@ -283,24 +298,29 @@ span {
     
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     section {
         padding: 5rem 4rem;
     }
     h1, h2 {
         font-size: 3.5rem;
+        line-height: 2.5rem;
     }
     h3 {
         font-size: 2.5rem;
+        line-height: 2rem;
     }
     h4 {
         font-size: 2rem;
+        line-height: 1.8rem;
     }
     h5 {
         font-size: 1.5rem;
+        line-height: 1.6rem;
     }
     h6 {
         font-size: 1.4rem;
+        line-height: 1.6rem;
     }
     p {
         font-size: 1.3rem;
@@ -308,6 +328,7 @@ span {
     }
     label {
         font-size: 1.4rem;
+        line-height: 1.2rem;
     }
 }
 
