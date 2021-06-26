@@ -9,12 +9,12 @@
 
 @font-face {
     font-family: "Nexa-Light";
-    src: url(../Fonts/Nexa-Light.otf) format("opentype");
+    src: url(../fonts/Nexa-Light.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Nexa-Bold";
-    src: url(../Fonts/Nexa-Bold.otf) format("opentype");
+    src: url(../fonts/Nexa-Bold.otf) format("opentype");
 }
 
 
@@ -42,7 +42,7 @@ header {
 }
 
 section {
-    padding: 1.5rem 0.95rem;
+    padding: 2rem 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -259,9 +259,6 @@ span {
 
 @media only screen and (min-width: 768px) and (max-device-width: 1024px){
 
-    section {
-        padding: 3rem 2rem;
-    }
     h1, h2 {
         font-size: 3rem;
         line-height: 3rem;
@@ -302,10 +299,9 @@ span {
 
 @media only screen and (min-width: 1024px) {
     section {
-        padding: 5rem 4rem;
+        padding: 3rem 4rem;
     }
     h1, h2 {
-        font-size: 3.5rem;
         line-height: 2.5rem;
     }
     h3 {
@@ -333,7 +329,7 @@ span {
         line-height: 1.2rem;
     }
     input {
-        font-size: 2rem;
+        font-size: 1rem;
         margin-bottom: 1rem;
         padding: 0.75rem;
     }

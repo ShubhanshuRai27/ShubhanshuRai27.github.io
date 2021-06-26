@@ -27,44 +27,167 @@
                 <button type="submit" class="primary-button">Search</button>
             </form>
         </section>
-        <section class="working">
-                <h1>How it works</h1>
-                <p>Various facilities are provided here. But there is a protocol which needs to be followed so that you get the service at its best.</p>
-                <div class="container">
-                    <div class="box">
-                        <p>01</p>
-                        <p>Fix Consultation</p>
+        <section class="how-it-works-section">
+            <div class="how-it-works-container">
+                <div class="how-it-works-heading">
+                    <h2>How it works</h2>
+                </div>
+                <div class="how-it-works-paragraph common-para-class">
+                    <p>Various facilities are provided here.But there is a protocol which needs to be followed so that you
+                        get the service at its best.</p>
+                </div>
+                <div class="how-it-works-button-all">
+                    <div class="how-it-works-button">
+                        <button class="common-how-it-work-class active-btn-1" onclick="show1()">
+                            <span class="number active-number-1">01</span>
+                            <span class="text active-text-1">Fix Consultation</span>
+                        </button>
+    
+                        <div class="another-1">
+                            <figure class="how-it-works-img-container">
+                                <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png"
+                                    alt="" class="img-container-img">
+                                <figcaption class="text-img-container common-para-class">
+                                    <h6>Fix Consultation</h6>
+                                    <p>This depicts that user have to fix appointment first when it selects a particular
+                                        doctor
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
                     </div>
-                    <div id="img1">
-                        <div id=image><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png" alt="Fix consultation"></div>
-                        <h1>Fix Consultation</h1>
-                        <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
+    
+                    <div class="how-it-works-button">
+                        <button onclick="show2()" class="common-how-it-work-class">
+                            <span class="number">02</span>
+                            <span class="text">Upload Medical Reports</span>
+                        </button>
+    
+                        <div class="another-1">
+                            <figure class="how-it-works-img-container hide-img-container">
+                                <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img2.png"
+                                    alt="" class="img-container-img">
+                                <figcaption class="text-img-container common-para-class">
+                                    <h6>Upload Medical Reports</h6>
+                                    <p>This depicts that user have to fix appointment first when it selects a particular
+                                        doctor
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+    
                     </div>
-                    <div class="box">
-                        <p>02</p>
-                        <p>Upload Medical Reports</p>
+    
+                    <div class="how-it-works-button">
+    
+                        <button onclick="show3()" class="common-how-it-work-class">
+                            <span class="number">03</span>
+                            <span class="text">Consult with doctor</span>
+                        </button>
+    
+    
+                        <div class="another-1">
+                            <figure class="how-it-works-img-container hide-img-container">
+                                <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img3.jpeg"
+                                    alt="" class="img-container-img">
+                                <figcaption class="text-img-container common-para-class">
+                                    <h6>Consult with doctor</h6>
+                                    <p>This depicts that user have to fix appointment first when it selects a particular
+                                        doctor
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
                     </div>
-                    <div class="box">
-                        <p>03</p>
-                        <p>Consult with doctor</p>
+    
+                    <div class="how-it-works-button">
+    
+                        <button onclick="show4()" class="common-how-it-work-class">
+                            <span class="number">04</span>
+                            <span class="text">Fix Surgery</span>
+                        </button>
+    
+                        <div class="another-1">
+                            <div class="how-it-works-img-container hide-img-container">
+                                <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img4.jpeg"
+                                    alt="" class="img-container-img">
+                                <figcaption class="text-img-container common-para-class">
+                                    <h6>Fix Surgery</h6>
+                                    <p>This depicts that user have to fix appointment first when it selects a particular
+                                        doctor
+                                    </p>
+                                </figcaption>
+                            </div>
+                        </div>
+    
                     </div>
-                    <div class="box">
-                        <p>04</p>
-                        <p>Fix Surgery</p>
+    
+                    <div class="how-it-works-button">
+    
+                        <button onclick="show5()" class="common-how-it-work-class">
+                            <span class="number">05</span>
+                            <span class="text">Hospital sent estimates</span>
+                        </button>
+    
+                        <div class="another-1">
+                            <figure class="how-it-works-img-container hide-img-container">
+                                <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img5.jpg"
+                                    alt="" class="img-container-img">
+                                <figcaption class="text-img-container common-para-class">
+                                    <h6>Hospital sent estimates</h6>
+                                    <p>This depicts that user have to fix appointment first when it selects a particular
+                                        doctor
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+    
                     </div>
-                    <div class="box">
-                        <p>05</p>
-                        <p>Hospital sent estimates</p>
+    
+                    <div class="how-it-works-button">
+    
+                        <button onclick="show6()" class="common-how-it-work-class">
+                            <span class="number">06</span>
+                            <span class="text">Payment</span>
+                        </button>
+    
+                        <div class="another-1">
+                            <figure class="how-it-works-img-container hide-img-container">
+                                <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img6.jpg"
+                                    alt="" class="img-container-img">
+                                <figcaption class="text-img-container common-para-class">
+                                    <h6>Payment</h6>
+                                    <p>This depicts that user have to fix appointment first when it selects a particular
+                                        doctor
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+    
                     </div>
-                    <div class="box">
-                        <p>06</p>
-                        <p>Payment</p>
-                    </div>
-                    <div class="box">
-                        <p>07</p>
-                        <p>Surgery Completed</p>
+    
+                    <div class="how-it-works-button works-button-last">
+    
+                        <button onclick="show7()" class="common-how-it-work-class">
+                            <span class="number">07</span>
+                            <span class="text">Surgery Completed</span>
+                        </button>
+    
+                        <div class="another-1">
+                            <figure class="how-it-works-img-container hide-img-container">
+                                <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img7.jpeg"
+                                    alt="" class="img-container-img">
+                                <figcaption class="text-img-container common-para-class">
+                                    <h6>Surgery Completed</h6>
+                                    <p>This depicts that user have to fix appointment first when it selects a particular
+                                        doctor
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
                     </div>
                 </div>
+            </div>
         </section>
         <section class="doctor">
             <h1>World Class Expert Doctors!</h1>
@@ -85,7 +208,7 @@
                 <p>London</p>
             </div>
             <div class="card">
-                <div id=image><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg" alt="doctor3"></div>
+                <div id="image" style="height: 375px;"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg" alt="doctor3"></div>
                 <p class="name">____Charlie Moon</p>
                 <p>Cardiac Surgeon</p>
                 <p>MBBS, MD, FRCP, MRCP, Fellowship</p>
@@ -142,11 +265,52 @@
                 </div>
             </div>
         </section>
+        <section class="services">
+            <div class="exclusive-service-div">
+            <div class="exclusive-service-heading">
+                <h4>Exclusive services</h4>
+            </div>
+            <div class="exclusive-service-paragraph common-para-class">
+                <p>We want you to be comfortable and thus apart from threatning you illness. we provide you with other
+                    services that you can see</p>
+            </div>
+
+            <div class="service-card">
+                <figure class="travel-card common-card-property">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-01.png" alt="">
+                    <figcaption class="common-inside-service-card">Travel</figcaption>
+                </figure>
+                <figure class="food-card common-card-property">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-02.png" alt="">
+                    <figcaption class="common-inside-service-card">Food</figcaption>
+                </figure>
+
+                <figure class="accomodation-card common-card-property spcl-img-self-center">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-03.png" alt="">
+                    <figcaption class="accomodation-spcl-class common-inside-service-card">ACCOMODATION</figcaption>
+                </figure>
+                <figure class="labs-card common-card-property">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-07.png" alt="">
+                    <figcaption class="common-inside-service-card">Labs</figcaption>
+                </figure>
+
+                <figure class="reports-card common-card-property">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-10.png" alt="">
+                    <figcaption class="common-inside-service-card">Reports</figcaption>
+                </figure>
+                <figure class="ambulance-card common-card-property spcl-img-self-center">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-06.png" alt="">
+                    <figcaption class="common-inside-service-card">Ambulance</figcaption>
+                </figure>
+            </div>
+        </div>
+        </section>
         <section class="enquiry">
             <h2>Need Help?</h2>
             <p>Just let us know,we will be happy to assist you</p>
             <button>Submit your enquiry</button>
         </section>
+
     </main>
     <footer>
         <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png" alt="logo" class="logo">
