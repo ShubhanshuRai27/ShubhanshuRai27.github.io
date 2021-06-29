@@ -1,337 +1,292 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
-@font-face {
-    font-family: "Nexa-Light";
-    src: url(../fonts/Nexa-Light.otf) format("opentype");
+body {
+  user-select: none;
 }
 
 @font-face {
-    font-family: "Nexa-Bold";
-    src: url(../fonts/Nexa-Bold.otf) format("opentype");
+  font-family: Nexa-Light;
+  src: url(../fonts/Nexa-Light.otf);
 }
 
-
-:root {
-    --light-blue: #93BEDE;
-    --bright-blue: #0173B2;
-    --dark-blue: #021433;
-    --bg-blue:#8fcaf1;
-    --grey: #636668;
-    --light-grey: #aaa;
-    --dark-grey: #525659;
-    --mix-grey: #777;
-    --black: #000;
-    --white: #fff;
-    --whitesmoke: #F5F5F5;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-header {
-    padding: 1rem;
-    background-color: var(--white);
+@font-face {
+  font-family: Nexa-Bold;
+  src: url(../fonts/Nexa-Bold.otf);
 }
 
 section {
-    padding: 2rem 1rem;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Nexa-Bold";
-    color: var(--dark-blue);
-    margin-bottom: 1rem;
-}
-
-h1, h2 {
-    font-size: 1.68rem;
-    line-height: 1.8rem;
-}
-
-h3 {
-    font-size: 2rem;
-    line-height: 1.6rem;
-}
-
-h4 {
-    font-size: 1.5rem;
-    line-height: 1.3rem;
-}
-
-h5 {
-    font-size: 1.3rem;
-    line-height: 1rem;
-}
-
-h6 {
-    font-size: 1.2rem;
-    line-height: 1rem;
-}
-
-p {
-    font-family: Nexa-Light;
-    margin-bottom: 1.5rem;
-    font-size:1rem;
-    word-spacing: 0.1rem;
-}
-
-select {
-    padding: 0.7rem;
-    border: none;
-    border-radius: 0.4rem;
-    margin-bottom: 1rem;
-    background-color: var(--white);
-    border: 1px solid var(--light-grey);
-}
-
-option {
-    font-family: Nexa-Light;
-    font-size: 1.1rem;
-    color: var(--grey);
-}
-
-label {
-    font-family: Nexa-Light;
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-    display: flex;
-}
-
-input {
-    font-size: 1rem;
-    padding: 0.65rem;
-    border: none;
-    outline: none;
-    margin-bottom: 0.55rem;
-}
-
-::placeholder {
-    padding-left: 1rem;
-    color: var(--light-grey);
-    font-size: 0.75rem;
-    font-family: "Nexa-Light";
-}
-
-input[type="checkbox"]+label::before {
-    content: "\2714";
-    border: 0.1rem solid var(--black);
-    padding: 0.1rem;
-    color: var(--white);
-}
-
-input[type="checkbox"]:checked+label::before {
-    background-color: var(--white);
-    color: var(--bright-blue);
-}
-
-
-input[type="checkbox"] {
-    display: none;
-}
-
-input[type="radio"]+label::before {
-    content: "\2714";
-    border: 0.14rem solid var(--dark-grey);
-    color: transparent;
-    margin-right: 1rem;
-    border-radius: 70%;
-    background-color: var(--light-grey);
-    opacity: 45%;
-    font-size:1rem;
-}
-
-input[type="radio"]:checked+label::before {
-    opacity: 100%;
-    border: 0.1rem solid var(--dark-grey);
-} 
-
-input[type="radio"] {
-    display: none;
-}
-
-
-input[type="radio"]:checked+label::before {
-    background-color: var(--white);
-    color: var(--bright-blue);
-}
-
-input[type=button] {
-    background-color: var(--dark-blue);
-    color: var(--white);
-    cursor: pointer;
-}
-
-input[type="file"] {
-    padding: 0;
-}
-
-input[type="date"]:enabled {
-    border: 0.2rem solid var(--mix-grey);
-    color: var(--mix-grey);
-}
-
-input[type="date"]:focus {
-    border: 1px solid var(--light-grey);
-    color: var(--light-grey);
-}
-
-textarea {
-    margin-bottom: 1rem;
-    border: 0.1rem solid var(--light-grey);
-    width: 100%;
+  padding: 2.5rem 1rem;
+  text-align: center;
 }
 
 img {
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Nexa-Bold;
+  color: #222844;
+}
+
+h1,
+h2 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 900;
+  margin-bottom: 0.625rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  margin-bottom: 0.625rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  margin-bottom: 0.3125rem;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  margin-bottom: 0.3125rem;
+}
+
+p {
+  font-family: Nexa-Light;
+  line-height: 1.4rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: #222844;
+  margin-bottom: 1.5rem;
+}
+
+input,
+select {
+  font-family: Nexa-Light;
+  line-height: 1.4rem;
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  width: 100%;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  color: #222844;
+  margin-bottom: 0.625rem;
+}
+
+textarea {
+  font-family: Nexa-Light;
+  line-height: 1.4rem;
+  padding: 0.8rem 0.75rem;
+  font-size: 1.1rem;
+  width: 100%;
+  color: #a19f9f;
+  outline: none;
+  border: 0.125rem solid #a19f9f;
+  margin-bottom: 0.625rem;
+}
+
+input::placeholder {
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  color: #a19f9f;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+textarea::placeholder {
+  font-size: 0.6rem;
+  color: #a19f9f;
+  font-family: Nexa-Bold;
 }
 
 button {
-    padding: 0.7rem 0.5rem;
-    border-radius: 0rem;
-    font-size: 1.2rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
+  font-family: Nexa-Light;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  outline: none;
+  cursor: pointer;
 }
 
-.primary-button {
-    background-color: var(--dark-blue);
-    color: var(--white);
-    font-size: 0.9rem;
- 
+.dark-blue {
+  background-color: #222844;
+  color: white;
+  border: 0.125rem solid #222844;
 }
 
-.primary-button:hover {
-    background-color: var(--white);
-    color: var(--dark-blue);
-    border: 0.1rem solid var(--dark-blue);
+.light-blue {
+  background-color: #93bede;
+  color: white;
+  border: 0.125rem solid #93bede;
 }
 
-.secondary-button {
-    background-color: var(--white);
-    color: var(--dark-blue);
-    border: 0.1rem solid var(--dark-blue);
+.sky-blue {
+  background-color: #0173b2;
+  color: white;
+  border: 0.125rem solid #0173b2;
 }
 
-.secondary-button:hover {
-    background-color: var(--dark-blue);
-    color: var(--white);
-    border: 0.1rem solid var(--dark-blue);
+.white {
+  background-color: white;
+  color: #222844;
+  border: 0.125rem solid white;
 }
 
-a {
-    text-decoration: none;
-    font-size: 0.8rem;
-    color: var(--dark-blue);
-    font-family: Nexa-Light;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-li{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.search {
+  background-color: white;
+  color: #a19f9f;
+  border: 0.125rem solid #dbd8d8;
 }
 
 span {
-    font-family: Nexa-Bold;
+  font-family: Nexa-Bold;
+  color: #a19f9f;
+  font-size: 1.1rem;
 }
 
+label {
+  font-family: Nexa-Light;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
 
-@media only screen and (min-width: 768px) and (max-device-width: 1024px){
+ul {
+  margin-bottom: 0.625rem;
+}
 
-    h1, h2 {
-        font-size: 3rem;
-        line-height: 3rem;
-    }
-    h3 {
-        font-size: 2.2rem;
-        line-height: 2.5rem;
-    }
-    h4 {
-        font-size: 1.7rem;
-        line-height: 2rem;
-    }
-    h5 {
-        font-size: 1.5rem;
-        line-height: 1.8rem;
-    }
-    h6 {
-        font-size: 1.4rem;
-        line-height: 1.8rem;
-    }
-    p {
-        font-size: 1.3rem;
-        line-height: 1.6rem;
-    }
-    label {
-        font-size: 1.3rem;
-        line-height: 1rem;
-    }
-    input {
-        font-size: 1.1rem;
-        margin-bottom: 0.8rem;
-        padding: 0.65rem;
-        border: none;
-        outline: none;
-    }
-    
+ul li {
+  font-size: 0.8rem;
+  font-family: Nexa-Light;
+  color: #222844;
+
+  line-height: 1.1rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-family: Nexa-Light;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 728px) {
+  section {
+    padding: 2rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-    section {
-        padding: 3rem 4rem;
-    }
-    h1, h2 {
-        line-height: 2.5rem;
-    }
-    h3 {
-        font-size: 2.5rem;
-        line-height: 2rem;
-    }
-    h4 {
-        font-size: 2rem;
-        line-height: 1.8rem;
-    }
-    h5 {
-        font-size: 1.5rem;
-        line-height: 1.6rem;
-    }
-    h6 {
-        font-size: 1.4rem;
-        line-height: 1.6rem;
-    }
-    p {
-        font-size: 1.3rem;
-        line-height: 2rem;
-    }
-    label {
-        font-size: 1.4rem;
-        line-height: 1.2rem;
-    }
-    input {
-        font-size: 1rem;
-        margin-bottom: 1rem;
-        padding: 0.75rem;
-    }
-}
 
+  section,
+  nav {
+    padding: 5rem 6rem;
+    text-align: left;
+  }
+
+  h1,
+  h2 {
+    font-size: 2.2rem;
+    line-height: 4rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    line-height: 4rem;
+    margin-bottom: 0.625rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-bottom: 0.625rem;
+  }
+
+  h5 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-bottom: 0.3125rem;
+  }
+
+  h6 {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 0.3125rem;
+  }
+
+  p {
+    font-family: Nexa-Light;
+    letter-spacing: 0.05rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
+
+  }
+
+  button {
+    font-size: 0.85rem;
+    font-weight: 590;
+    text-align: center;
+  }
+
+  input,
+  select {
+    padding: 0.8rem 0.75rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  ul li {
+    font-size: 1rem;
+  }
+
+  span {
+    font-size: 1.3rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  input::placeholder {
+    font-size: 0.75rem;
+  }
+}
