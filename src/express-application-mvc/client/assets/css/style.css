@@ -1,3 +1,4 @@
+/*Hamburger*/
 .fas {
     color: #525659;
     height: auto;
@@ -8,6 +9,7 @@
     display: none;
 }
 
+/*Navbar*/
 .navbar {
     height: auto;
     width: 100%;
@@ -18,6 +20,7 @@
     padding: 1rem 1rem;
 }
 
+/*Logo*/
 .navbar .logo img {
     height: 1.5rem;
     width: 6rem;
@@ -29,6 +32,7 @@
     display: none;
 }
 
+/*Hero Banner*/
 .hero_banner {
     width: 100%;
     height: auto;
@@ -37,10 +41,12 @@
     padding: 2.5rem 1rem;
 }
 
+/*paragraph*/
 p {
     text-align: center;
 }
 
+/*Search Button*/
 .topsearch {
     border-radius: 0px;
     margin-top: 0.5rem;
@@ -53,6 +59,7 @@ p {
     padding-left: 2.3rem;
 }
 
+/*Fav icon*/
 .fa-map-marker-alt {
     position: absolute;
     padding-top: 0.75rem;
@@ -69,10 +76,12 @@ p {
     right: 1.75rem;
 }
 
+/*display :grid*/
 .grid {
     display: grid;
 }
 
+/*How it works Section*/
 .how_it_works {
     text-align: center;
 }
@@ -101,6 +110,7 @@ p {
     color: #a19f9f;
 }
 
+/*Javascript*/
 .one {
     border: 0.5px solid #a19f9f;
     border-radius: 10px;
@@ -197,6 +207,7 @@ p {
     letter-spacing: 0.05rem;
 }
 
+/* World class expert doctor section*/
 .world_class {
     background-color: #222844;
     text-align: center;
@@ -225,6 +236,7 @@ p {
     display: grid;
 }
 
+/*Doctor card*/
 .doctorcard {
     background-color: white;
     border-bottom: 4px solid #93bede;
@@ -267,6 +279,7 @@ p {
     margin-left: 2.2rem;
 }
 
+/*Featured Treatment Section*/
 .featured_treatment {
     text-align: center;
 }
@@ -472,6 +485,7 @@ p {
     display: none;
 }
 
+/*Exclusive services section */
 .exclusive_services {
     background-color: #f0f0f5;
     text-align: center;
@@ -508,6 +522,7 @@ p {
     font-size: 0.8rem;
 }
 
+/*Need help section*/
 .help {
     text-align: center;
     background-color: #93bede;
@@ -524,12 +539,14 @@ p {
     border-radius: 5px;
 }
 
+/*Footer*/
 .footer {
     background-color: #222844;
     padding: 1rem;
     text-align: center;
 }
 
+/*Social media icons*/
 .footer .social_media {
     text-align: center;
     margin-bottom: 1rem;
@@ -564,6 +581,7 @@ p {
     margin-bottom: 0.75rem;
 }
 
+/*Tablet View*/
 @media only screen and (min-width: 728px) {
     .navbar {
         padding: 1rem 2rem;
@@ -767,6 +785,7 @@ p {
     }
 }
 
+/*Desktop View*/
 @media only screen and (min-width: 1024px) {
     .navbar {
         padding: 1rem 6rem;
