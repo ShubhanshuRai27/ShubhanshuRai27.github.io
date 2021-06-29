@@ -1,3 +1,21 @@
+:root {
+  --light-blue: #93BEDE;
+  --bright-blue: #0173B2;
+  --dark-blue: #021433;
+  --bg-blue: #8fcaf1;
+  --grey: #636668;
+  --light-grey: #aaa;
+  --dark-grey: #525659;
+  --mix-grey: #777;
+  --black: #000;
+  --white: #fff;
+  --whitesmoke: #F5F5F5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
