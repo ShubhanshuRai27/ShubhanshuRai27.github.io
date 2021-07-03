@@ -63,6 +63,7 @@ body .login h1 {
   margin: 0rem;
   font-size: 1.5rem;
   color: #167ddd;
+  text-align: center;
 }
 
 body .login select {
