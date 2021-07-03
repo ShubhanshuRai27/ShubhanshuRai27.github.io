@@ -104,9 +104,10 @@ body .login p {
   color: #666565;
 }
 
-body .login p span {
+body .login p span a{
   font-size: 0.8rem;
   color: #167ddd;
+  font-family: Nexa-Bold;
 }
 
 body .login form {
