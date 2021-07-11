@@ -851,13 +851,13 @@ section {
     font-weight: 600;
     padding: 1.25rem 3rem;
   }
-  .help .help_container .right .sky-blue:hover,
+  /* .help .help_container .right .sky-blue:hover,
   .help .help_container .right .sky-blue:active {
     border: 2px solid #167ddd;
     background-color: white;
     color: #167ddd;
     transition: background-color 0.05s ease-in;
-  }
+  } */
   .footer {
     padding: 1rem 6rem;
     border-bottom: 8px solid #167ddd;
