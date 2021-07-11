@@ -1,0 +1,466 @@
+body {
+  user-select: none;
+}
+
+.fas {
+  color: #525659;
+  height: auto;
+  margin-top: 0.5rem;
+}
+
+.navbar {
+  height: auto;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.navbar .logo img {
+  height: 1.5rem;
+  width: 6rem;
+  object-fit: cover;
+}
+
+.navbar .menubar,
+.navbar .nav_button {
+  display: none;
+}
+
+.top {
+  padding: 2.5rem 1.5rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(34, 48, 60, 0.35),
+      rgba(34, 48, 60, 0.35)
+    ),
+    url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top h1,
+.top li {
+  color: white;
+}
+
+.top h1 {
+  margin-bottom: 1.5rem;
+}
+
+.top li {
+  font-family: Nexa-Light;
+  list-style: none;
+  line-height: 1.5rem;
+}
+
+.intro {
+  display: grid;
+  row-gap: 1rem;
+  padding: 2.5rem 1.5rem;
+}
+
+.intro .part1 img {
+  object-fit: contain;
+  width: 15rem;
+  height: auto;
+}
+
+.intro .part2 img {
+  object-fit: contain;
+}
+
+.freecheckup {
+  padding: 2.5rem 1.5rem;
+  background-color: black;
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.freecheckup video {
+  display: none;
+}
+
+.freecheckup .part1 h1,
+.freecheckup .part1 p {
+  color: white;
+}
+
+.freecheckup .part1 p {
+  letter-spacing: 0.05rem;
+}
+
+.freecheckup .part1 .sky-blue {
+  font-family: Nexa-Bold;
+  border-radius: 0.3rem;
+}
+
+.freecheckup .part2 {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.freecheckup .part2 .cards {
+  border: 1px solid #a19f9f;
+  border-radius: 0.4rem;
+  padding: 2.5rem;
+}
+
+.freecheckup .part2 .cards h3 {
+  color: white;
+}
+
+.freecheckup .part2 .cards li {
+  color: grey;
+  list-style: none;
+  font-family: Nexa-Bold;
+  font-size: 0.8rem;
+}
+
+.help {
+  text-align: center;
+  background-color: #93bede;
+}
+
+.help h2 {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.help .sky-blue {
+  font-size: 1rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: 5px;
+}
+
+.footer {
+  background-color: #222844;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer .social_media {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.footer .social_media .fab {
+  margin-right: 1rem;
+}
+
+.footer img {
+  width: 11rem;
+  height: 3rem;
+  object-fit: contain;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer li,
+.footer i,
+.footer p {
+  color: #cccccc;
+}
+
+.footer li {
+  font-size: 16px;
+  margin-bottom: 1.15rem;
+}
+
+.footer .copyright p {
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 0.75rem;
+}
+
+@media only screen and (min-width: 728px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  .intro {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    overflow: hidden;
+  }
+  .intro .part2 img {
+    object-fit: fill;
+    max-height: 30rem;
+  }
+  .freecheckup .part1 {
+    display: grid;
+    justify-content: left;
+  }
+  .freecheckup .part1 h1,
+  .freecheckup .part1 p {
+    text-align: left;
+  }
+  .freecheckup .part1 .sky-blue {
+    width: 12rem;
+    padding: 0.5rem 0rem;
+  }
+  .freecheckup .part2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  .freecheckup .part2 .cards {
+    padding: 1.75rem 2.5rem;
+  }
+  .footer {
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-template-rows: repeat(2, 0.5fr);
+    background-color: white;
+    border-bottom: 4px solid #167ddd;
+  }
+  .footer li,
+  .footer i,
+  .footer p {
+    color: #222844;
+    margin-bottom: 0;
+  }
+  .footer li {
+    font-size: 0.9rem;
+    letter-spacing: 0;
+  }
+  .footer p {
+    color: black;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+  .footer img {
+    grid-row: 1/2;
+    grid-column: 2/2;
+    justify-self: end;
+    align-self: center;
+  }
+  .footer .tags {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+    text-align: center;
+    max-width: 450px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer .social_media {
+    grid-column: 2/2;
+    grid-row: 2/2;
+    justify-self: end;
+    align-self: center;
+    margin-bottom: 0;
+  }
+  .footer .social_media .fab {
+    margin-right: 1.3rem;
+  }
+  .footer .social_media .fa-instagram {
+    margin-right: 0;
+  }
+  .footer .copyright {
+    justify-self: start;
+    align-self: center;
+  }
+  .footer .copyright p {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    padding: 1rem 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navbar .logo {
+    flex-basis: 20%;
+    flex-shrink: 1;
+  }
+  .navbar .logo img {
+    width: 10rem;
+    height: auto;
+  }
+  .navbar .menubar,
+  .navbar .nav_button {
+    display: inline;
+  }
+  .navbar .menubar li:active,
+  .navbar .menubar li:hover,
+  .navbar .nav_button li:active,
+  .navbar .nav_button li:hover {
+    color: #167ddd;
+  }
+  .navbar .nav_button .sky-blue:hover,
+  .navbar .nav_button .sky-blue:active,
+  .navbar .nav_button .dark-blue:hover,
+  .navbar .nav_button .dark-blue:active {
+    border: 1px solid #222844;
+    background-color: whitesmoke;
+    color: #222844;
+    transition: background-color 0.1s ease-out;
+  }
+  .navbar i {
+    display: none;
+  }
+  .navbar .menubar {
+    flex-basis: 50%;
+    max-width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-self: center;
+    align-self: center;
+    flex-shrink: 2;
+    margin-bottom: 0;
+  }
+  .navbar .menubar li {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .navbar .nav_button {
+    flex-basis: 17.7rem;
+    flex-shrink: 0;
+  }
+  .navbar .nav_button .sky-blue,
+  .navbar .nav_button .dark-blue {
+    border: 1px solid #222844;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 0.75rem;
+  }
+  .navbar .nav_button .sky-blue {
+    border: 1px solid #167ddd;
+  }
+  .navbar .nav_button .dark-blue {
+    width: 127px;
+  }
+  .intro {
+    padding: 3rem 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .intro .part1 h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .intro .part2 {
+    display: flex;
+    justify-content: center;
+  }
+  .intro .part2 img {
+    object-fit: fill;
+    width: 60%;
+  }
+  .freecheckup {
+    position: relative;
+    background: none;
+    overflow: hidden;
+    padding: 3rem 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+  .freecheckup video {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -10%;
+    transform: scale(2.5);
+    height: 100%;
+    width: 100%;
+  }
+  .freecheckup .part1 {
+    display: grid;
+    row-gap: 1rem;
+  }
+  .freecheckup .part1 h1 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-bottom: 0;
+  }
+  .freecheckup .part1 p {
+    margin-bottom: 0;
+  }
+  .freecheckup .part1 .sky-blue {
+    margin: 2.5rem 0rem;
+    max-height: 3rem;
+  }
+  .freecheckup .part2 .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #666565;
+    border-radius: 0.3rem;
+  }
+  .freecheckup .part2 .cards h3 {
+    margin: 0;
+  }
+  .freecheckup .part2 .cards li {
+    text-align: center;
+  }
+  .freecheckup .part2 .cards:hover {
+    border: 2px solid white;
+    border-radius: 0.3rem;
+  }
+  .help {
+    padding: 2rem 6rem;
+  }
+  .help .help_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .help .help_container .left h2 {
+    margin-bottom: 0;
+    font-size: 2rem;
+    text-align: left;
+  }
+  .help .help_container .left p {
+    text-align: left;
+  }
+  .help .help_container .right {
+    text-align: right;
+  }
+  .help .help_container .right .sky-blue {
+    font-size: 1.33rem;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+  }
+  .footer {
+    padding: 1rem 6rem;
+    border-bottom: 8px solid #167ddd;
+  }
+  .footer li {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .footer .tags li:hover,
+  .footer .tags li:active {
+    color: #167ddd;
+    transition: color 0.1s ease-in;
+  }
+  .footer .social_media .fab:hover,
+  .footer .social_media .fab:active {
+    color: #167ddd;
+  }
+  .footer .copyright p {
+    font-weight: 600;
+    letter-spacing: 0.025rem;
+  }
+}
