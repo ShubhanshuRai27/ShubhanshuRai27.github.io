@@ -1,0 +1,557 @@
+.fas {
+  color: #525659;
+  height: auto;
+  margin-top: 0.5rem;
+}
+
+.navbar {
+  height: auto;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.navbar .logo img {
+  height: 1.5rem;
+  width: 6rem;
+  object-fit: cover;
+}
+
+.navbar .menubar,
+.navbar .nav_button {
+  display: none;
+}
+
+.top {
+  background: linear-gradient(to right, #167ddd, transparent 95%),
+    url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/dentist_hero_image.jpg);
+  background-size: cover;
+  background-position: 35% 20%;
+  background-repeat: no-repeat;
+  height: 17.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top h2,
+.top li {
+  color: white;
+}
+
+.top li {
+  font-family: Nexa-Light;
+  list-style: none;
+  letter-spacing: 0.05rem;
+}
+
+.grid_container .element_1 .vaccination .data_container {
+  padding-top: 1.5rem;
+}
+
+.grid_container .element_1 .vaccination .data_container h5 {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-bottom: 1.15rem;
+}
+
+.grid_container .element_1 .vaccination .data_container p {
+  text-align: left;
+  letter-spacing: 0.05rem;
+}
+
+.grid_container .element_1 .vaccination .data_container ul {
+  padding: 0rem 1rem;
+}
+
+.grid_container .element_1 .vaccination .data_container ul li {
+  list-style: disc;
+  text-align: left;
+  line-height: 2rem;
+  letter-spacing: 0.04rem;
+  font-size: 1rem;
+}
+
+.grid_container .element_1 .vaccination .data_container ul li::marker {
+  font-size: 1.15rem;
+  color: #167ddd;
+}
+
+.grid_container .element_1 .vaccination .icons {
+  margin: 3rem 0rem;
+}
+
+.grid_container .element_1 .vaccination .icons div {
+  display: grid;
+  justify-items: center;
+  row-gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.grid_container .element_1 .vaccination .icons div .icon_container {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: #d1e5f5;
+  border-radius: 75px;
+}
+
+.grid_container .element_1 .vaccination .icons div .icon_container .fas {
+  margin: 0rem;
+  color: #222844;
+  font-size: 1.4rem;
+}
+
+.grid_container .element_1 .vaccination .icons div h5 {
+  margin-bottom: 0;
+  font-size: 1.225rem;
+}
+
+.grid_container .element_1 .vaccination .icons div li {
+  list-style: none;
+  font-family: Nexa-Light;
+  line-height: 1.2rem;
+  letter-spacing: 0.04rem;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.grid_container .element_2 .cards {
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.grid_container .element_2 .cards .service_details,
+.grid_container .element_2 .cards .Schedule {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  position: relative;
+}
+
+.grid_container .element_2 .cards .service_details h5,
+.grid_container .element_2 .cards .Schedule h5 {
+  text-align: left;
+  font-size: 1.3rem;
+  margin-bottom: 1.4rem;
+}
+
+.grid_container .element_2 .cards .service_details h5::before,
+.grid_container .element_2 .cards .Schedule h5::before {
+  content: "";
+  position: absolute;
+  width: 1.8rem;
+  height: 0.15rem;
+  background-color: #167ddd;
+  left: 0;
+  top: 35px;
+}
+
+.grid_container .element_2 .cards .service_details li,
+.grid_container .element_2 .cards .Schedule li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 2rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1rem;
+}
+
+.grid_container .element_2 .cards .service_details li span,
+.grid_container .element_2 .cards .Schedule li span {
+  font-size: 0.875rem;
+}
+
+.grid_container .element_2 .cards .service_details li .fir,
+.grid_container .element_2 .cards .Schedule li .fir {
+  color: #222844;
+}
+
+.more_services {
+  background-color: #93bede;
+  padding: 2.5rem 1.5rem;
+}
+
+.more_services header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.more_services header h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+.more_services header .button_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 4.5rem;
+}
+
+.more_services header .button_container .carousel_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.more_services header .button_container .carousel_button .fas {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.more_services .card_container {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.more_services .card_container figure {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0.5px 0.5px 0.5rem 0.5px #666565;
+}
+
+.more_services .card_container figure div {
+  max-height: 15rem;
+}
+
+.more_services .card_container figure div img {
+  height: 15rem;
+}
+
+.more_services .card_container figure figcaption {
+  background-color: white;
+  padding: 2.5rem 2rem;
+  position: relative;
+}
+
+.more_services .card_container figure figcaption h3 {
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+.more_services .card_container figure figcaption h3::before {
+  content: "";
+  position: absolute;
+  width: 1.6rem;
+  height: 0.15rem;
+  background-color: #167ddd;
+  left: 0;
+  top: 52.5px;
+}
+
+.footer {
+  background-color: #222844;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer .social_media {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.footer .social_media .fab {
+  margin-right: 1rem;
+}
+
+.footer img {
+  width: 11rem;
+  height: 3rem;
+  object-fit: contain;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer li,
+.footer i,
+.footer p {
+  color: #cccccc;
+}
+
+.footer li {
+  font-size: 16px;
+  margin-bottom: 1.15rem;
+}
+
+.footer .copyright p {
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 0.75rem;
+}
+
+@media only screen and (min-width: 728px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  .grid_container .element_1 .vaccination h1 {
+    text-align: left;
+  }
+  .grid_container .element_1 .vaccination .container_1 {
+    display: grid;
+    grid-template-columns: 3.5fr 6fr;
+    column-gap: 2rem;
+  }
+  .grid_container .element_1 .vaccination .container_1 .data_container h5 {
+    font-size: 1.4rem;
+  }
+  .grid_container .element_1 .vaccination .container_1 .data_container p,
+  .grid_container .element_1 .vaccination .container_1 .data_container li {
+    font-size: 1.1rem;
+  }
+  .grid_container .element_1 .vaccination .icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+  }
+  .grid_container .element_1 .vaccination .icons div li {
+    letter-spacing: 0.05rem;
+    line-height: 1.5rem;
+  }
+  .grid_container .element_2 .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
+  }
+  .grid_container .element_2 .cards .service_details {
+    height: min-content;
+  }
+  .grid_container .element_2 .cards .Schedule {
+    height: min-content;
+  }
+  .more_services header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .more_services header h1 {
+    margin-bottom: 0;
+  }
+  .more_services .card_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+  }
+  .more_services .card_container figure figcaption {
+    padding-right: 0;
+  }
+  .more_services .card_container figure figcaption h3 {
+    font-size: 1.2rem;
+  }
+  .footer {
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-template-rows: repeat(2, 0.5fr);
+    background-color: white;
+    border-top: 1px solid #dbd8d8;
+    border-bottom: 4px solid #167ddd;
+  }
+  .footer li,
+  .footer i,
+  .footer p {
+    color: #222844;
+    margin-bottom: 0;
+  }
+  .footer li {
+    font-size: 0.9rem;
+    letter-spacing: 0;
+  }
+  .footer p {
+    color: black;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+  .footer img {
+    grid-row: 1/2;
+    grid-column: 2/2;
+    justify-self: end;
+    align-self: center;
+  }
+  .footer .tags {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+    text-align: center;
+    max-width: 450px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer .social_media {
+    grid-column: 2/2;
+    grid-row: 2/2;
+    justify-self: end;
+    align-self: center;
+    margin-bottom: 0;
+  }
+  .footer .social_media .fab {
+    margin-right: 1.3rem;
+  }
+  .footer .social_media .fa-instagram {
+    margin-right: 0;
+  }
+  .footer .copyright {
+    justify-self: start;
+    align-self: center;
+  }
+  .footer .copyright p {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    padding: 1rem 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navbar .logo {
+    flex-basis: 20%;
+    flex-shrink: 1;
+  }
+  .navbar .logo img {
+    width: 10rem;
+    height: auto;
+  }
+  .navbar .menubar,
+  .navbar .nav_button {
+    display: inline;
+  }
+  .navbar .menubar li:active,
+  .navbar .menubar li:hover,
+  .navbar .nav_button li:active,
+  .navbar .nav_button li:hover {
+    color: #167ddd;
+  }
+  .navbar .nav_button .sky-blue:hover,
+  .navbar .nav_button .sky-blue:active,
+  .navbar .nav_button .dark-blue:hover,
+  .navbar .nav_button .dark-blue:active {
+    border: 1px solid #222844;
+    background-color: whitesmoke;
+    color: #222844;
+    transition: background-color 0.1s ease-out;
+  }
+  .navbar i {
+    display: none;
+  }
+  .navbar .menubar {
+    flex-basis: 50%;
+    max-width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-self: center;
+    align-self: center;
+    flex-shrink: 2;
+    margin-bottom: 0;
+  }
+  .navbar .menubar li {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .navbar .nav_button {
+    flex-basis: 17.7rem;
+    flex-shrink: 0;
+  }
+  .navbar .nav_button .sky-blue,
+  .navbar .nav_button .dark-blue {
+    border: 1px solid #222844;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 0.75rem;
+  }
+  .navbar .nav_button .sky-blue {
+    border: 1px solid #167ddd;
+  }
+  .navbar .nav_button .dark-blue {
+    width: 127px;
+  }
+  .top {
+    justify-content: flex-start;
+  }
+  .grid_container {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    column-gap: 2rem;
+    padding: 2rem 6rem;
+  }
+  .grid_container .element_1 .vaccination .container_1 .data_container p {
+    font-size: 1rem;
+    font-family: Nexa-Light;
+    font-weight: normal;
+  }
+  .grid_container .element_1 .vaccination .icons h5 {
+    text-align: center;
+  }
+  .grid_container .element_2 .cards {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .grid_container .element_2 .cards .service_details h5,
+  .grid_container .element_2 .cards .Schedule h5 {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+  }
+  .grid_container .element_2 .cards .service_details li,
+  .grid_container .element_2 .cards .Schedule li {
+    line-height: 1.1rem;
+  }
+  .grid_container .element_2 .cards .service_details li span,
+  .grid_container .element_2 .cards .Schedule li span {
+    font-size: 0.9rem;
+  }
+  .more_services {
+    padding: 2rem 6rem;
+  }
+  .more_services .card_container figure figcaption {
+    padding: 2rem 2rem;
+  }
+  .more_services .card_container figure figcaption h3 {
+    line-height: normal;
+  }
+  .more_services .card_container figure figcaption h3::before {
+    top: 39px;
+  }
+  .footer {
+    padding: 1rem 6rem;
+    border-bottom: 8px solid #167ddd;
+  }
+  .footer li {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .footer .tags li:hover,
+  .footer .tags li:active {
+    color: #167ddd;
+    transition: color 0.1s ease-in;
+  }
+  .footer .social_media .fab:hover,
+  .footer .social_media .fab:active {
+    color: #167ddd;
+  }
+  .footer .copyright p {
+    font-weight: 600;
+    letter-spacing: 0.025rem;
+  }
+}
