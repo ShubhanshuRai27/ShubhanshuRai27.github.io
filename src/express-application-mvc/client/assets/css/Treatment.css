@@ -1,3 +1,7 @@
+body {
+  user-select: none;
+}
+
 .fas {
   color: #525659;
   height: auto;
