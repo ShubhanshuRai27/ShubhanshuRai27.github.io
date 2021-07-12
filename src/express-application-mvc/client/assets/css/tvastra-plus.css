@@ -1263,7 +1263,7 @@ section {
     grid-template-rows: repeat(2, 0.5fr);
   }
   .footer li {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 600;
   }
   .footer .tags li:hover,
