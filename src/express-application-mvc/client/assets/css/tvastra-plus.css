@@ -29,7 +29,7 @@ section {
 }
 
 .navbar .menubar,
-.navbar .top_button {
+.navbar .nav_button {
   display: none;
 }
 
@@ -747,12 +747,12 @@ section {
   text-align: center;
 }
 
-.footer .logos {
+.footer .social_media {
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.footer .logos .fab {
+.footer .social_media .fab {
   margin-right: 1rem;
 }
 
@@ -963,17 +963,17 @@ section {
     flex-direction: row;
     justify-content: space-between;
   }
-  .footer .logos {
+  .footer .social_media {
     grid-column: 2/2;
     grid-row: 2/2;
     justify-self: end;
     align-self: center;
     margin-bottom: 0;
   }
-  .footer .logos .fab {
+  .footer .social_media .fab {
     margin-right: 1.3rem;
   }
-  .footer .logos .fa-instagram {
+  .footer .social_media .fa-instagram {
     margin-right: 0;
   }
   .footer .copyright {
@@ -1001,19 +1001,19 @@ section {
     height: auto;
   }
   .navbar .menubar,
-  .navbar .top_button {
+  .navbar .nav_button {
     display: inline;
   }
   .navbar .menubar li:active,
   .navbar .menubar li:hover,
-  .navbar .top_button li:active,
-  .navbar .top_button li:hover {
+  .navbar .nav_button li:active,
+  .navbar .nav_button li:hover {
     color: #167ddd;
   }
-  .navbar .top_button .sky-blue:hover,
-  .navbar .top_button .sky-blue:active,
-  .navbar .top_button .dark-blue:hover,
-  .navbar .top_button .dark-blue:active {
+  .navbar .nav_button .sky-blue:hover,
+  .navbar .nav_button .sky-blue:active,
+  .navbar .nav_button .dark-blue:hover,
+  .navbar .nav_button .dark-blue:active {
     border: 1px solid #222844;
     background-color: whitesmoke;
     color: #222844;
@@ -1037,21 +1037,21 @@ section {
     font-size: 0.9rem;
     font-weight: 600;
   }
-  .navbar .top_button {
+  .navbar .nav_button {
     flex-basis: 17.7rem;
     flex-shrink: 0;
   }
-  .navbar .top_button .sky-blue,
-  .navbar .top_button .dark-blue {
+  .navbar .nav_button .sky-blue,
+  .navbar .nav_button .dark-blue {
     border: 1px solid #222844;
     border-radius: 3px;
     font-weight: 600;
     font-size: 0.75rem;
   }
-  .navbar .top_button .sky-blue {
+  .navbar .nav_button .sky-blue {
     border: 1px solid #167ddd;
   }
-  .navbar .top_button .dark-blue {
+  .navbar .nav_button .dark-blue {
     width: 127px;
   }
   .plans {
@@ -1271,8 +1271,8 @@ section {
     color: #167ddd;
     transition: color 0.1s ease-in;
   }
-  .footer .logos .fab:hover,
-  .footer .logos .fab:active {
+  .footer .social_media .fab:hover,
+  .footer .social_media .fab:active {
     color: #167ddd;
   }
   .footer .copyright p {
