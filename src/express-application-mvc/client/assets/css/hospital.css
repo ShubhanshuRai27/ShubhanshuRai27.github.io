@@ -532,7 +532,7 @@ section {
     color: white;
     transition: background-color 0.1s ease-out;
   }
-  /* .navbar .nav_button .sky-blue:hover,
+  .navbar .nav_button .sky-blue:hover,
   .navbar .nav_button .sky-blue:active,
   .navbar .nav_button .dark-blue:hover,
   .navbar .nav_button .dark-blue:active {
@@ -540,7 +540,7 @@ section {
     background-color: whitesmoke;
     color: #222844;
     transition: background-color 0.1s ease-out;
-  } */
+  }
   .navbar i {
     display: none;
   }
