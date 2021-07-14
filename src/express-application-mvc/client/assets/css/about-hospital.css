@@ -331,14 +331,15 @@ body{
     align-self: center;
     }
     .footer .tags {
-    grid-column: 1/2;
-    align-self: center;
-      text-align: center;
-      max-width: 450px;
-      margin: 0;
-      display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+        text-align: center;
+        max-width: 450px;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .footer .social_media {
       grid-column: 2/2;
