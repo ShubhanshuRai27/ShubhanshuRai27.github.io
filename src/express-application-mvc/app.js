@@ -23,7 +23,7 @@ app.use("/",routes);
 
 app.set("port", process.env.PORT || 4000);
 app.listen(app.get("port"), () => {
-    console.log("application running on port ",4000);
+    console.log("application running on port",4000);
 });
 
 module.exports=app;
