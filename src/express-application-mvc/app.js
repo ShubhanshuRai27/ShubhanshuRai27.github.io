@@ -5,14 +5,6 @@ const app = express();
 const ejs = require("ejs");
 const routes = require("./backend/routes/htmlRoutes");
 
-const logger = require("morgan");
-const compression = require("compression");
-const cors = require("cors");
-
-app.use(cors());
-app.use(compression());
-app.use(logger("dev"));
-
 app.set("views", __dirname+"/client/views");
 app.engine("html", ejs.renderFile);
 
