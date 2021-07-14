@@ -1,9 +1,8 @@
 const path = require("path");
 
 const express = require("express");
-const ejs = require("ejs");
 const app = express();
-
+const ejs = require("ejs");
 const routes = require("./backend/routes/htmlRoutes");
 
 const logger = require("morgan");
@@ -15,7 +14,7 @@ app.use(compression());
 app.use(logger("dev"));
 
 app.set("views", __dirname+"/client/views");
-app.engine("html", require("ejs").renderFile);
+app.engine("html", ejs.renderFile);
 
 app.set("view engine", "ejs");
 
