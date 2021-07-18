@@ -1,21 +1,24 @@
 const express = require("express");
-const pages = require("../controller/htmlController");
+const mainCtrl = require("../controller/htmlController");
+const loginCtrl = require("../controller/loginController")
 const router = express.Router();
 
-router.route("/about-hospital").get(pages.abouthospital);
-router.route("/about-us").get(pages.aboutus);
-router.route("/appointment").get(pages.appointment);
-router.route("/contactUs").get(pages.contactUs);
-router.route("/doctor-profile").get(pages.doctorProfile);
-router.route("/doctor").get(pages.doctor);
-router.route("/FAQ").get(pages.FAQ);
-router.route("/hospital").get(pages.hospital);
-router.route("/").get(pages.index);
-router.route("/login").get(pages.login);
-router.route("/query").get(pages.query);
-router.route("/signup").get(pages.signup);
-router.route("/Treatment").get(pages.Treatment);
-router.route("/tvastra-plus").get(pages.tvastraPlus);
+router.route("/about-hospital").get(loginCtrl.ensure,mainCtrl.abouthospital);
+router.route("/about-us").get(loginCtrl.ensure,mainCtrl.aboutus);
+router.route("/appointment").get(loginCtrl.ensure,mainCtrl.appointment);
+router.route("/contactUs").get(loginCtrl.ensure,mainCtrl.contactUs);
+router.route("/doctor-profile").get(loginCtrl.ensure,mainCtrl.doctorProfile);
+router.route("/doctor").getloginCtrl.ensure,(mainCtrl.doctor);
+router.route("/FAQ").get(loginCtrl.ensure,mainCtrl.FAQ);
+router.route("/hospital").get(mainCtrl.hospital);
+router.route("/").get(mainCtrl.login);
+router.route("/").post(loginCtrl.login)
+router.route("/index").get(loginCtrl.ensure,mainCtrl.index);
+router.route("/query").get(loginCtrl.ensure,mainCtrl.query);
+router.route("/signup").get(mainCtrl.signup);
+router.route("/signup").post(loginCtrl.signup);
+router.route("/Treatment").get(loginCtrl.ensure,mainCtrl.Treatment);
+router.route("/tvastra-plus").get(loginCtrl.ensure,mainCtrl.tvastraPlus);
 
 
 module.exports = router ;
