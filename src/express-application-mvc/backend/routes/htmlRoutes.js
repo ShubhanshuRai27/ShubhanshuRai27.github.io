@@ -8,9 +8,9 @@ router.route("/about-us").get(loginCtrl.ensure,mainCtrl.aboutus);
 router.route("/appointment").get(loginCtrl.ensure,mainCtrl.appointment);
 router.route("/contactUs").get(loginCtrl.ensure,mainCtrl.contactUs);
 router.route("/doctor-profile").get(loginCtrl.ensure,mainCtrl.doctorProfile);
-router.route("/doctor").getloginCtrl.ensure,(mainCtrl.doctor);
+router.route("/doctor").get(loginCtrl.ensure,mainCtrl.doctor);
 router.route("/FAQ").get(loginCtrl.ensure,mainCtrl.FAQ);
-router.route("/hospital").get(mainCtrl.hospital);
+router.route("/hospital").get(loginCtrl.ensure,mainCtrl.hospital);
 router.route("/").get(mainCtrl.login);
 router.route("/").post(loginCtrl.login)
 router.route("/index").get(loginCtrl.ensure,mainCtrl.index);

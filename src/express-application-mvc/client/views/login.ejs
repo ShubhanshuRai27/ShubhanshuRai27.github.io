@@ -41,23 +41,45 @@
                     Quote</button></a>
         </div>
     </nav>
+
+    <% if(error) { %>
+        <% if(errorType=='Failure'){ %>
+            <div class="error_container">
+                <i class="fas fa-times-circle"></i>
+                <div class="data_container">
+                    <h6>Failure</h6>
+                    <span>Incorrect Email or Password</span>
+                </div>
+                <i class="fas fa-times"></i>
+            </div>
+        <% } %>
+        
+    <% } %> 
+
     <section class="login">
+        
         <h1>Login</h1>
-        <form action="submit">
+        <form action="/" method="POST">
             <div class="input1_container">
-                <input type="text" placeholder="Enter Mobile Number">
+                <input name="email" type="text" placeholder="Enter Email">
                 <i class="fas fa-question-circle"></i>
-
+                
             </div>
-
-            <input type="text" placeholder="Enter OTP">
+            <div class="input1_container">
+                <input name="password" type="password" placeholder="Enter Password">
+                <i class="far fa-eye-slash"></i>
+            </div>
+            
+            <div class="options_container">
+                <a href="/otp">Login with OTP</a>
+                <a href="/forgotpassword">Forgot Password</a>
+            </div>
             <div class="button_container">
-                <button class="dark-blue">LOGIN</button>
+                <button type="submit" class="dark-blue">LOGIN</button>
                 <i class="fas fa-arrow-right"></i>
-            </div>
+            </div>            
         </form>
-        <p>Not Registered? <span><a href="signup">Sign Up</a></span>
-        </p>
+        <p>Not Registered? <a href="/signup"><span>Sign Up</span></p></a>
     </section>
     <section class="copyright">
         <span>All Rights Reserved © Tvastra 2021</span>

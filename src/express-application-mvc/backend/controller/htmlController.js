@@ -1,17 +1,3 @@
-let login = (req,res) => {
-    res.render("login",{error:req.session.error,session:req.session,errorType:req.session.errorType});
-};
-
-let index = (req,res) => {
-    if(req.session.cnt){
-        req.session.cnt++;
-    }
-    else{
-        req.session.cnt = 1;
-    }
-    console.log(req.session.cnt,req.session.name);
-    res.render("index",{error:req.session.error,name:req.session.name, session:req.session, errorType:req.session.errorType, cnt:req.session.cnt});
-};
 
 let abouthospital = (req,res) => {
     res.render("about-hospital",{name:req.session.name});
@@ -44,6 +30,22 @@ let FAQ = (req,res) => {
 let hospital = (req,res) => {
     res.render("hospital",{name:req.session.name});
 };
+
+let login = (req,res) => {
+    res.render("login",{error:req.session.error,session:req.session,errorType:req.session.errorType});
+};
+
+let index = (req,res) => {
+    if(req.session.cnt){
+        req.session.cnt++;
+    }
+    else{
+        req.session.cnt = 1;
+    }
+    console.log(req.session.cnt,req.session.name);
+    res.render("index",{error:req.session.error,name:req.session.name, session:req.session, errorType:req.session.errorType, cnt:req.session.cnt});
+};
+
 
 let query = (req,res) => {
     res.render("query",{name:req.session.name});
