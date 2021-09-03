@@ -1,6 +1,7 @@
-# Tvastra
+# Technologies Used
+HTML, CSS, JAVASCRIPT.
+Mongoose on top of MongoDB.
+Express on top of NodeJS.
+Nexmo API for OTP Service.
 
-## This is the wiki file to read about the tasks
-
-<a href="https://workspace.konfinity.com/swapnil/tvastra-wiki/-/wikis/01-Task01" target="_blank">Open wiki page</a>
-
+A full fleged doctor website created using the above stacks.
